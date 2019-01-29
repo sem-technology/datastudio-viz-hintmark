@@ -1,0 +1,66 @@
+{
+  "data": [{
+    "id": "dummy",
+    "heading": "Dummy",
+    "elements": [{
+      "id": "dimensions",
+      "label": "Dimensions",
+      "type": "DIMENSION",
+      "options": {
+        "min": 0,
+        "max": 1,
+        "supportedTypes": ["DEFAULT"]
+      }
+    }, {
+      "id": "metrics",
+      "label": "Metric",
+      "type": "METRIC",
+      "options": {
+        "min": 0,
+        "max": 1
+      }
+    }]
+  }],
+  "style": [{
+    "id": "hintmark",
+    "label": "Hintmark",
+    "elements": [{
+      "id": "hintmark_text",
+      "label": "Hintmark Text",
+      "type": "TEXTINPUT"
+    }, {
+      "id": "hintmark_icon",
+      "label": "Hinttmark Icon",
+      "type": "SELECT_SINGLE",
+      "defaultValue": "0",
+      "options": [
+        {"label": "exclamation mark", "value": 0},
+        {"label": "question mark", "value": 1}
+      ]
+    }]
+  }, {
+    "id": "marksize",
+    "label": "Mark Size",
+    "elements": [{
+      "id": "marksize_select",
+      "label": "Mark Size",
+      "type": "SELECT_SINGLE",
+      "defaultValue": "100%",
+      "options": [
+        {"label": "100%", "value": "100%"},
+        {"label": "75%", "value": "75%"},
+        {"label": "50%", "value": "50%"},
+        {"label": "25%", "value": "25%"}
+      ]
+    }]
+  }, {
+    "id": "colors",
+    "label": "Tooltip Colors",
+    "elements":[{
+      "id": "background_color",
+      "label": "Background Color",
+      "type": "FILL_COLOR",
+      "defaultValue": "#ffffe1"
+    }]
+  }]
+}

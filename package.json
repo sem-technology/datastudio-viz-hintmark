@@ -1,0 +1,31 @@
+{
+  "config": {
+    "gcsDevBucket": "gs://mydebugstorage/datastudio/viz-hintmark/dev",
+    "gcsProdBucket": "gs://semtechnology-public/datastudio/viz-hintmark/v1",
+    "jsFile": "index.js",
+    "jsonFile": "index.json",
+    "manifestFile": "manifest.json",
+    "cssFile": "styles.css"
+  },
+  "scripts": {
+    "build:dev": "node scripts/build.js --prod false",
+    "build:prod": "node scripts/build.js --prod true",
+    "push:dev": "node scripts/push.js --prod false",
+    "push:prod": "node scripts/push.js --prod true",
+    "deploy:dev": "node scripts/build.js --prod false && node scripts/push.js --prod false"
+  },
+  "devDependencies": {
+    "bluebird": "^3.5.2",
+    "commander": "^2.19.0",
+    "copy-webpack-plugin": "^4.5.3",
+    "shelljs": "^0.8.2",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "4.1.4",
+    "webpack-plugin-replace": "^1.1.1"
+  },
+  "dependencies": {
+    "@google/dscc": "0.2.1"
+  }
+}
